@@ -1,0 +1,12 @@
+version: '3.9'
+name: "TWD"
+services:
+  postgres:
+    container_name: clouds
+    image: postgres:16-alpine3.19
+    environment:
+      POSTGRES_DB: 'TWD'
+      POSTGRES_USER: 'root'
+      POSTGRES_PASSWORD: 'root'
+    ports:
+      - '5432:5432'
